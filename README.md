@@ -12,12 +12,12 @@ Define your js ad urls
 
 ```html
 <script>
-SugarAds.adJsUrls['728x90'] = ""http:\/\/example.com\/ad.js?size=728x90&var1=val1&var2=val2";
+SugarAds.adJsUrls['728x90'] = "http:\/\/example.com\/ad.js?size=728x90&var1=val1&var2=val2";
 SugarAds.adJsUrls['300x250'] = "http:\/\/example.com\/ad.js?size=300x250&var1=val1&var2=val2";
 <script>
 ```
 
-Place ad div in your page where the ads should render
+Place ad divs in your page where the ads should render
 
 ```html
 <div id="sugarad-728x90" class="sugarad" data-sugar-ad_width="728" data-sugar-ad_height="90"></div>
@@ -34,7 +34,7 @@ SugarAds.renderAds();
 
 <!-- Render just one -->
 SugarAds.renderAds(["728x90"]);
-<!-- Fir just one ad a string is ok too -->
+<!-- For just one ad, a string is fine too -->
 SugarAds.renderAds("728x90");
 
 <!-- Render all ads at the domcontentready event (using jquery here) -->
