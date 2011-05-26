@@ -2,13 +2,15 @@
 
 ## Enabling sugar in your web pages
 
-Include the js library
+1. Add sugarfif.html to the root of your domain(s) where you serve your html pages
+
+2. Include the js library
 
 ```html
 <script src="sugarads.js"></script>
 ```
 
-Define your js ad urls
+3. Define your js ad urls
 
 ```html
 <script>
@@ -17,13 +19,13 @@ SugarAds.adJsUrls['300x250'] = "http:\/\/example.com\/ad.js?size=300x250&var1=va
 <script>
 ```
 
-Place ad divs in your page where the ads should render
+4. Place ad divs in your page where the ads should render
 
 ```html
 <div id="sugarad-728x90" class="sugarad" data-sugar-ad_width="728" data-sugar-ad_height="90"></div>
 <div id="sugarad-300x250" class="sugarad" data-sugar-ad_width="300" data-sugar-ad_height="250"></div>
 ```
-Now you can render and refresh the ads at anytime
+5. Now you can render and refresh the ads at anytime
 
 ```html
 <script>
