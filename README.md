@@ -39,4 +39,6 @@ SugarAds.renderAds("728x90");
 
 <!-- Render all ads at the domcontentready event (using jquery here) -->
 jQuery(document).ready(function(){SugarAds.renderAds();});
+<!-- onload event is fine too, have no fear of document.write it is not a problem -->
+jQuery(window).load(function(){SugarAds.renderAds();});
 </script>
