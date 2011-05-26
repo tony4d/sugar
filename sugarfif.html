@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <base target="_blank" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title>
+    <style type="text/css">body{margin:0 auto;text-align:center}</style>
+    <script>
+        var inDapIF=true, inFIF=true, fif=window.frameElement, sugar=window.parent.SugarAds;
+        function setFifDim(w,h) {
+            sugar.setFifDim(fif, w, h);
+        }
+        window.onload=function() {
+            if (sugar) {
+                setTimeout(function() { sugar.fifOnload(window); }, 10);
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        window.sugarTimerStart = new Date().getTime();
+        if (fif && fif.adjsurl) {
+            document.write('<script src="'+fif.adjsurl+'"></script'+'>');
+        }
+    </script>
+</body>
+</html>

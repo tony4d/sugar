@@ -1,0 +1,15 @@
+/*layout*/
+#sugarad-stitial-overlay {z-index:10000;position:fixed;top:0px;left:0px;width:100%;height:100%;color:#fff;text-align:center;vertical-align:middle;}
+#sugarad-stitial-container {background-color:#1a1a1a;border-width:10px 0 0 0;border-style:solid;border-color:#5b5b5c;color:#fff;height:100%;text-align:center;}
+#sugarad-stitial-header {margin:0 auto 12px auto;border-width:2px 0 0 0;border-style:solid;border-color:#121212;}
+#sugarad-stitial-header-logo {float:left; margin:-2px 0 0 32px; width:118px; border:0px;}
+#sugarad-stitial-header-text {padding:6px 150px 0 0; /*this mirrors the margin/width of the logo so text can center*/}
+#sugarad-stitial-creative, #sugarad-stitial-disable {clear:both;margin:0 auto 12px auto;}
+/*this style is applied to the doc's html element only when the stitial is active so flash doesn't shine through overlay, stupid flash*/
+html.sugarad-stitial-open object, html.sugarad-stitial-open embed {visibility: hidden;}
+/*typography*/
+#sugarad-stitial-container {font-family: Helvetica, Arial; font-size: 16px;}
+#sugarad-stitial-container a:link, #sugarad-stitial-container a:visited {color:#fff;text-decoration:none;}
+#sugarad-stitial-container a:hover, #sugarad-stitial-container a:active {text-decoration:underline;}
+#sugarad-stitial-disable a {color:#ccc;}
+.sugarad {display:none; margin:0 auto 12px auto; font-size:0;}
