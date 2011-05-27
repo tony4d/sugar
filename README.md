@@ -28,19 +28,19 @@ SugarAds.adJsUrls['300x250'] = "http:\/\/example.com\/ad.js?size=300x250&var1=va
 
 ```html
 <script>
-<!-- Render both ads -->
+// Render both ads
 SugarAds.renderAds(["728x90","300x250"]);
-<!-- Or, pass nothing and all ads will render -->
+// Or, pass nothing and all ads will render
 SugarAds.renderAds();
 
-<!-- Render just one -->
+// Render just one
 SugarAds.renderAds(["728x90"]);
-<!-- For just one ad, a string is fine too -->
+// For just one ad, a string is fine too
 SugarAds.renderAds("728x90");
 
-<!-- Render all ads at the domcontentready event (using jquery here) -->
+// Render all ads at the domcontentready event (using jquery here)
 jQuery(document).ready(function(){SugarAds.renderAds();});
-<!-- onload event is fine too, have no fear of document.write it is not a problem -->
+// onload event is fine too, have no fear of document.write it is not a problem
 jQuery(window).load(function(){SugarAds.renderAds();});
 </script>
 ```
