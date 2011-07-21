@@ -15,12 +15,12 @@ Sugar is a flexible and powerful client-side display ad solution that allows you
 ## Flexibility
 1. Using a simple configuration sugar can work with either traditional js embeds for each ad or in ad server mode using jsonp where a single http request fetches all ads at once.
 
-2. Sugar is extensible so you can easily define your ad server if it's not supported. Currently sugar supports these ad servers out of the box: IGN proprietary Ad Wrapper.
+2. Sugar is extensible so you can easily define your ad server if it's not supported. Currently sugar supports these ad servers out of the box: IGN proprietary Ad Wrapper (Google's DFP is planned and in development now).
 
 
 # Enabling sugar in your web pages
 
-* First, add sugarfif.html to the root of your domain(s) where you serve your html pages. Note, you should set cache control max-age to a very high value for this document. You do not want clients downloading this ore than once. If you're using apache here is a sample configuration that would work well:
+* First, add sugarfif.html to the root of your domain(s) where you serve your html pages. Note, you should set cache control max-age to a very high value for this document. You do not want clients downloading this more than once. If you're using apache here is a sample configuration that would work well (this means clients will cache this in their browser for 1 year, effectively forever):
 
 ```
 <Files sugarfif.html>
@@ -76,6 +76,13 @@ jQuery(document).ready(function(){SugarAds.renderAds();});
 jQuery(window).load(function(){SugarAds.renderAds();});
 </script>
 ```
+
+# Planned Features
+
+1. Google DFP ad server support (very soon).
+2. Support asynchronous javascript library downloading. This includes completely changing the api interfaces to queue up calls similar to how google analytics works.
+3. Data and analysis on how sugar.js impacts ad impressions, user engagement, bounce rate, etc
+4. Better and more optimized analytics (maybe we can abstract analytics to support more systems beyond google analytics)
 
 # License
 
