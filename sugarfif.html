@@ -20,7 +20,9 @@
 <body>
     <script>
         window.sugarTimerStart = new Date().getTime();
-        if (fif && fif.adjsurl) {
+        if (fif.adcreative && fif.adcreative != '') {
+            document.write(fif.adcreative);
+        } else if (fif.adjsurl && fif.adjsurl != '') {
             document.write('<script src="'+fif.adjsurl+'"></script'+'>');
         }
     </script>

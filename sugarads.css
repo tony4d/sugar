@@ -1,5 +1,5 @@
 /*layout*/
-#sugarad-stitial-overlay {z-index:10000;position:fixed;top:0px;left:0px;width:100%;height:100%;color:#fff;text-align:center;vertical-align:middle;}
+#sugarad-stitial-overlay {display:none;z-index:10000;position:fixed;top:0px;left:0px;width:100%;height:100%;color:#fff;text-align:center;vertical-align:middle;}
 #sugarad-stitial-container {background-color:#1a1a1a;border-width:10px 0 0 0;border-style:solid;border-color:#5b5b5c;color:#fff;height:100%;text-align:center;}
 #sugarad-stitial-header {margin:0 auto 12px auto;border-width:2px 0 0 0;border-style:solid;border-color:#121212;}
 #sugarad-stitial-header-logo {float:left; margin:-2px 0 0 32px; width:118px; border:0px;}
