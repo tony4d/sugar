@@ -5,7 +5,7 @@ SugarAds = {
     adDivWidthAttrib: 'data-sugar-ad_width',
     adDivHeightAttrib: 'data-sugar-ad_height',
     analytics: false,
-    fifurl: '/sugarfif.html?2',
+    fifurl: '/sugarfif.html?3',
     urlRandLength: 12,
     urlRandNum: 0,
     adsData: {},
